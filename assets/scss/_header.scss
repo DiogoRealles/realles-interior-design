@@ -1,0 +1,70 @@
+@use './variables' as *;
+
+.header {
+  padding-block: 2.4rem;
+  background: $light-100;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      font-size: 4rem;
+      color: $dark-200;
+      font-weight: 700;
+      width: 210px;
+      height: 80px;
+    }
+
+    nav {
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4.8rem;
+
+        li {
+          a {
+            padding: 0.2rem 0.1rem;
+            color: $grey-100;
+            font-size: 2rem;
+            font-weight: 500;
+            font-family: $font-title;
+
+            &:hover {
+              text-decoration: underline;
+
+              text-underline-offset: 0.6rem;
+              color: $dark-200;
+            }
+          }
+        }
+      }
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+
+      .social {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0.4rem;
+
+        a {
+          font-size: 2.4rem;
+          color: $dark-200;
+          transition: all 0.3s ease-in-out;
+          padding: 0.4rem 0.8rem;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}

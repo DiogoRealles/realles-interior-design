@@ -1,0 +1,46 @@
+@use './variables' as *;
+
+.hero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url('../imgs/bg-hero.webp') no-repeat center/cover;
+  height: 80vh;
+
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .intro {
+      background: rgba(255, 255, 255, 0.45);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(9px);
+      -webkit-backdrop-filter: blur(9px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 0.8rem;
+      padding: 4rem;
+      width: 100%;
+      max-width: 110rem;
+
+      h1 {
+        font-size: 8rem;
+        font-family: $font-title;
+        color: $dark-200;
+        width: 100%;
+        max-width: 74rem;
+        margin-bottom: 4rem;
+      }
+
+      > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        p {
+          max-width: 50rem;
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+}
